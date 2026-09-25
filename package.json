@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-fairfax",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Fairfax County GIS — Fairfax County, Virginia open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-024316a9df0a05f96ef2e9d22e0e0342085bbf9a86efe6b0ee09af79e6108197",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-dd96846194afb21c8b68d0580c3709c32ddc3342c4a5d0c62c0b992993effd5d",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
