@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-fairfax",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Fairfax County GIS — Fairfax County, Virginia open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-fairfax": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-fairfax"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-fairfax.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-fairfax",
   "pipeworx": {
-    "sourceHash": "v1-027f77bf5efdf61954f64808e2ec13cb4fb718979961d3b701b52bf6704e1dec",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "arcgis-fairfax",
+    "gatewaySlug": "arcgis-fairfax",
+    "sourceHash": "v1-69ca7ab4519687cc77cab281888e70ee618b2b834f43946d4fade8f9dca1bbb8",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
